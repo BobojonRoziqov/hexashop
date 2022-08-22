@@ -166,8 +166,8 @@ header>main {
 
 /* header style */
 
-/*men latest section style*/
-.men-latest-section {
+/*men women kids latest section style*/
+.latest-section {
     width: 70%;
     margin: auto;
     padding: 5rem 0;
@@ -175,7 +175,7 @@ header>main {
 
 }
 
-.men-latest-heading h4 {
+.latest-heading h4 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.2rem;
@@ -183,14 +183,14 @@ header>main {
     margin: 10px 0;
 }
 
-.men-latest-heading p {
+.latest-heading p {
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
     color: #a1a1a1;
 }
 
-.men-container {
+.shops-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,16 +198,20 @@ header>main {
     margin-top: 3rem;
 }
 
-.men-container article {
+.shops-container article {
     max-width: 340px;
 
+
 }
 
-.men-img-container {
+.img-container {
     position: relative;
+    max-height: 340px;
+    max-width: 340px;
+    overflow: hidden;
 }
 
-.men-img-container>img {
+.img-container>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -227,7 +231,7 @@ header>main {
 
 }
 
-.men-img-container:hover .evaluation {
+.img-container:hover .evaluation {
     bottom: 30px;
     visibility: visible;
     transition: all 0.3s;
@@ -257,7 +261,7 @@ header>main {
     color: #2a2a2a;
 }
 
-.men-container>article>p {
+.shops-container>article>p {
     color: #a1a1a1;
     font-size: 1.1rem;
     font-weight: 500;
@@ -269,7 +273,7 @@ header>main {
     color: #2a2a2a;
 }
 
-/*men latest section style*/
+/*men women kids atest section style*/
 
 
 
