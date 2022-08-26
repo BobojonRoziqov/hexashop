@@ -48,13 +48,16 @@ nav {
 
 header>main {
     padding: 11.5rem 0;
+    border-bottom: 3px dotted #eee;
+    z-index: 2;
+}
+
+.gird-container {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border-bottom: 3px dotted #eee;
-    z-index: 2;
 }
 
 .img {
@@ -107,6 +110,7 @@ header>main {
 
 .header-grid-item {
     position: relative;
+
 }
 
 .hover-content-info {
@@ -275,6 +279,75 @@ header>main {
 
 /*men women kids atest section style*/
 
+/* products section style */
+.products-section {
+    width: 70%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.products-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    gap: 1rem;
+}
+
+.products-info h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.products-info p {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.products-info div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.products-info div>p {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.products-content {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-products {
+    all: unset;
+    background-color: white;
+    padding: 10px 25px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.btn-products:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* products section style */
+
+
+
 
 
 @media only screen and (max-width: 992px) {
@@ -309,5 +382,9 @@ header>main {
 
     header>main {
         padding: 12rem 1rem;
+    }
+
+    .products-content {
+        height: 350px;
     }
 }
