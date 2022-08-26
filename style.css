@@ -7,11 +7,14 @@
     font-family: poppins, sans-serif;
 }
 
+/* header section */
+
 nav {
     width: 100%;
-    position: fixed;
     border-bottom: 3px dotted #eee;
-    position: relative;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
 }
 
 .nav-container {
@@ -44,13 +47,14 @@ nav {
 }
 
 header>main {
-    padding: 3.5rem 0;
+    padding: 11.5rem 0;
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     border-bottom: 3px dotted #eee;
+    z-index: 2;
 }
 
 .img {
@@ -160,6 +164,119 @@ header>main {
     margin: 0 auto;
 }
 
+/* header style */
+
+/*men women kids latest section style*/
+.latest-section {
+    width: 70%;
+    margin: auto;
+    padding: 5rem 0;
+    border-bottom: 3px dotted #eee;
+
+}
+
+.latest-heading h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: #2a2a2a;
+    margin: 10px 0;
+}
+
+.latest-heading p {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    color: #a1a1a1;
+}
+
+.shops-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.shops-container article {
+    max-width: 340px;
+
+
+}
+
+.img-container {
+    position: relative;
+    max-height: 340px;
+    max-width: 340px;
+    overflow: hidden;
+}
+
+.img-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.evaluation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    background: none;
+    position: absolute;
+    bottom: 0px;
+    visibility: hidden;
+    margin-left: 15%;
+
+}
+
+.img-container:hover .evaluation {
+    bottom: 30px;
+    visibility: visible;
+    transition: all 0.3s;
+
+}
+
+.evaluation>span {
+    padding: 1rem;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.type-shop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.type-shop>span>i {
+    font-size: 10px;
+    color: #2a2a2a;
+}
+
+.shops-container>article>p {
+    color: #a1a1a1;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.type-shop h4 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+/*men women kids atest section style*/
+
+
+
 @media only screen and (max-width: 992px) {
     .header-grid-item1 {
         grid-column: 1/5;
@@ -191,6 +308,6 @@ header>main {
     }
 
     header>main {
-        padding: 3.5rem 1rem;
+        padding: 12rem 1rem;
     }
 }
